@@ -1,6 +1,5 @@
 === Article Voting ===
-Contributors: 
-Donate link: https://www.linkedin.com/in/srdjagunjic/
+Contributors: https://www.linkedin.com/in/srdjagunjic/
 Tags: article, post, voting, feedback
 Requires at least: 3.0.1
 Tested up to: 3.4
