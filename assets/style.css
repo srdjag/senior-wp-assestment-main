@@ -1,0 +1,55 @@
+.av-article-feedback-form {
+  border: 2px dashed purple;
+  border-radius: 10px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+.av-article-feedback-form .inner-wrap {
+  display: flex;
+  align-items: center;
+}
+.av-article-feedback-form .inner-wrap--a {
+  display: none;
+}
+.av-article-feedback-form .inner-wrap--a button {
+    pointer-events: none;
+}
+.av-article-feedback-form p {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.av-article-feedback-form button {
+  position: relative;
+  background: none;
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 7px 10px 7px 32px;
+  margin: 5px 0px 7px 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  user-select: none;
+}
+.av-article-feedback-form button:before {
+  content: "🙂";
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  transform: scale(1.2);
+  opacity: 0.5;
+  transition-duration: 200ms;
+}
+.av-article-feedback-form button:hover:before {
+  opacity: 1;
+}
+.av-article-feedback-form button.no-button:before, button.no-result:before {
+  content: "🙁";
+}
+.av-article-feedback-form button.voted {
+    border-color: #0693e3;
+    border-width: 2px;
+}
+.av-article-feedback-form button.voted:before {
+    opacity: 1;
+}
